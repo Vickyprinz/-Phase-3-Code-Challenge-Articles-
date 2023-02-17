@@ -15,4 +15,9 @@ class Author
     all_magazines.uniq
   end
 
+  
+  def add_article(magazine, title)
+    Article.new(self, magazine, title)
+  end
+
 end
