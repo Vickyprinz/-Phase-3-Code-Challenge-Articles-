@@ -21,4 +21,12 @@ class Magazine
       def contributors
         magazine_articles.collect{|article| article.author}.uniq
       end
+
+      def self.find_by_name(name)
+        find_magazines = self.all.select { |magazine| magazine.name == name}
+        find_magazines.first
+      end
+      def article_titles
+        magazine_articles.collect{|article| article.title}
+      end
     
