@@ -9,5 +9,12 @@ class Magazine
         ##shovel each new instance into an array
         @@all << self
       end
-
+      def self.all
+        @@all
+      end
+    
+         ##helper function
+      def magazine_articles
+        Article.all.select{|article| article.magazine.name == self.name}
+      end
 end
