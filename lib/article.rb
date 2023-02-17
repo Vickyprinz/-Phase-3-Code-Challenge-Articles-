@@ -17,4 +17,10 @@ class Magazine
       def magazine_articles
         Article.all.select{|article| article.magazine.name == self.name}
       end
+
+
+  def contributors
+    magazine_articles.collect{|article| article.author}.uniq
+  end
+
 end
