@@ -27,4 +27,8 @@ class Magazine
     find_magazines.first
   end
 
+  def article_titles
+    magazine_articles.collect{|article| article.title}
+  end
+
 end
