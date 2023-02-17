@@ -1,4 +1,4 @@
-<!-- # Phase-3-Code-Challenge-Articles---without-AR
+# Phase-3-Code-Challenge-Articles---without-AR
  
  ## Title:Magazine Article System
  
@@ -34,6 +34,7 @@ In order for you to use the content on this repo ensure you have the following:
        ruby config/environment.rb    
 to start the application   
 
+
 ## Author: [Victor-Kariuki](https://github.com/Vickyprinz)
 
-## License:MIT -->
+## License:MIT
