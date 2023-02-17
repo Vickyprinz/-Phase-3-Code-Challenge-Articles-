@@ -9,3 +9,16 @@ class Magazine
       @@all << self
     end
   
+    def self.all
+        @@all
+      end
+    
+         ##helper function
+      def magazine_articles
+        Article.all.select{|article| article.magazine.name == self.name}
+      end
+    
+      def contributors
+        magazine_articles.collect{|article| article.author}.uniq
+      end
+    
