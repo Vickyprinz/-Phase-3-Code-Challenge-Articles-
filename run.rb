@@ -1,8 +1,8 @@
-require_relative '../config/environment.rb'
+require_relative './config/environment.rb'
 
-def reload
-  load 'config/environment.rb'
-end
+# def reload
+#   load 'config/environment.rb'
+# end
 
 
 ###  WRITE YOUR TEST CODE HERE ###
